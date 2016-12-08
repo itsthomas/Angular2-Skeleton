@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>Angular2 Skeleton</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie-edge">
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Polyfills for older browsers -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+    <!-- loading JavaScript libraries from Twitter Bootstrap -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/tether/dist/js/tether.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- System Config -->
+    <script src="systemjs.config.js"></script>
+    <script>
+      // if there is an error pause the app and console.log the error
+      System.import('app').catch(function(err){ console.error(err); });
+    </script>
+  </head>
+
+  <body>
+    <!-- This text will be overwriteen with the text from our root-component (bootstrap-component) -->
+    <!-- If not, then something has gone wrong -->
+    <my-app>Loading, please wait...</my-app>
+  </body>
+</html>
